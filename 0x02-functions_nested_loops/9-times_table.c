@@ -4,13 +4,13 @@
  * times_table - prints the 9 times table
  * Return: no return
  */
-void times_table(void)
+int times_table(void)
 {
 	int a, b, op;
 
 	for (a = 0; a <= 9; a++)
 	{
-		_putchar(48)
+		_putchar(48);
 		for (b = 1; b <= 9; b++)
 		{
 			op = a * b;
@@ -18,7 +18,7 @@ void times_table(void)
 			_putchar(32);
 			if (op <= 9)
 			{
-				_puchar(32);
+				_putchar(32);
 				_putchar(op + 48);
 			}
 			else
